@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Random Chance</title>
+	</head>
+	<script type="text/javascript">
+		"use script";
+		function playSlots() {
+			var Quartercount = 100;
+			var test = 0;
+			var addCoins = 0;
+
+			while (Quartercount > 0) {
+				test = Math.floor(Math.random()* 100);
+				addCoins = Math.floor(Math.random()*50 + 50);
+				if (test == 1) {
+					Quartercount = Quartercount + addCoins;
+					console.log(Quartercount);
+					return Quartercount;
+				}
+				Quartercount--;
+			}
+			console.log(0);
+		}
+		playSlots();
+	</script>
+	<body>
+	</body>
+</html>

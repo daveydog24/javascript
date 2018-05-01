@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Numbers Only</title>
+	<script type="text/javascript">
+	function numbersOnly(first_array){
+		var new_array = [];
+		for (var i = 0; i < first_array.length; i++) {
+			if(typeof(first_array[i]) === "number"){
+				new_array.push(first_array[i])
+			}
+		}
+		console.log(new_array);
+		return new_array;
+	}
+	numbersOnly([1, "apple", 44, "HAPPY", 7, 10, -3, "orange", 0.5]);
+	</script>
+	</head>
+	<body>
+	</body>
+</html>
