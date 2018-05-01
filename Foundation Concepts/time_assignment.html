@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>If You Dont Mind, Can I Have The Time?</title>
+	</head>
+	<script type="text/javascript">
+		// public static void tellTime(var HOUR, var MINUTE, var PERIOD) { IF YOU WANTED A FUNCTION TO HAVE CHANGING VARIABLES
+		var HOUR = 8;
+		var MINUTE = 10;
+		var PERIOD = "AM";
+
+		var timeOfDay = "Morning";
+
+		if (PERIOD == "PM") {
+			timeOfDay = "Evening";
+		}
+		if (MINUTE <= 30) {
+			console.log("It's just after ", HOUR, " in the ", timeOfDay);
+		}
+		else {
+			console.log("It's almost ", HOUR, " in the ", timeofDay);
+		}
+	</script>
+<body>
+
+</body>
+</html>

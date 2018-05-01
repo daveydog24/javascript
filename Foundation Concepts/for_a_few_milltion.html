@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>For a few Million</title>
+	</head>
+	<script type="text/javascript">
+		var totalDays = 30;
+		var totalMoney = 0;
+		var moneyMultiplier = .01;
+
+		while (totalDays > 0) {
+			totalMoney = totalMoney + moneyMultiplier;
+			moneyMultiplier = moneyMultiplier * 2;
+			totalDays--;
+		}
+		totalMoney = totalMoney + moneyMultiplier;
+		console.log(totalMoney);
+	</script>
+	<body>
+
+	</body>
+</html>
